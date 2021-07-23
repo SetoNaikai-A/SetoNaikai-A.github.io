@@ -2529,6 +2529,7 @@ mark.search-keyword {
   border-radius: initial;
   box-shadow: initial;
   width: 240px;
+  opacity: 0.95;
 }
 @media (max-width: 991px) {
   .header-inner {
@@ -2542,6 +2543,7 @@ mark.search-keyword {
   justify-content: space-between;
   margin: 0 auto;
   width: calc(100% - 20px);
+  opacity: 0.95;
 }
 @media (min-width: 1200px) {
   .main {
@@ -2690,6 +2692,7 @@ mark.search-keyword {
   position: sticky;
   top: 12px;
   width: 240px;
+  opacity: 0.95;
   visibility: hidden;
 }
 @media (max-width: 991px) {
@@ -2771,4 +2774,15 @@ mark.search-keyword {
   .pagination {
     margin-bottom: 10px;
   }
+}
+body {
+  background: url("/images/Background/Pic1C.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+  color: var(--text-color);
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 1em;
+  line-height: 2;
 }
