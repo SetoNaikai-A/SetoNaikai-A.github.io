@@ -106,10 +106,78 @@
   <entry>
     <title>搭建Hexo博客</title>
     <url>/2021/07/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么"><a href="#1-Hexo是什么" class="headerlink" title="1.Hexo是什么"></a>1.Hexo是什么</h2><p>Hexo是一个快速、简洁、高效的博客框架</p>
+    <content><![CDATA[<h2 id="1-Markdown是什么"><a href="#1-Markdown是什么" class="headerlink" title="1.Markdown是什么"></a>1.Markdown是什么</h2><p>Markdown是一种轻量级的标记语言，通过Markdown语法编辑文本，能够使文本呈现清晰的结构</p>
 <span id="more"></span>
 
-<p>所谓博客即网络日志，是有个人管理，不定期更新文章的个人网站<br>所谓框架即Framework，是模板化的代码，能够将某些基础功能封装起来，当需要使用的时候调用即可</p>
+<h2 id="2-Mark的基本语法"><a href="#2-Mark的基本语法" class="headerlink" title="2.Mark的基本语法"></a>2.Mark的基本语法</h2><h3 id="2-1标题"><a href="#2-1标题" class="headerlink" title="2.1标题"></a>2.1标题</h3><p>Markdown中设置标题需要通过在文本前添加# #号的数量代表标题的等级 #号与文本之间需要间隔空格 Markdown支持1~6级标题</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#1级标题</span><br><span class="line">##2级标题</span><br><span class="line">###3级标题</span><br><span class="line">####4级标题</span><br><span class="line">#####5级标题</span><br><span class="line">######6级标题</span><br></pre></td></tr></table></figure>
+
+<p>效果为</p>
+<h1 id="1级标题"><a href="#1级标题" class="headerlink" title="1级标题"></a>1级标题</h1><h2 id="2级标题"><a href="#2级标题" class="headerlink" title="2级标题"></a>2级标题</h2><h3 id="3级标题"><a href="#3级标题" class="headerlink" title="3级标题"></a>3级标题</h3><h4 id="4级标题"><a href="#4级标题" class="headerlink" title="4级标题"></a>4级标题</h4><h5 id="5级标题"><a href="#5级标题" class="headerlink" title="5级标题"></a>5级标题</h5><h6 id="6级标题"><a href="#6级标题" class="headerlink" title="6级标题"></a>6级标题</h6><h3 id="2-2字体"><a href="#2-2字体" class="headerlink" title="2.2字体"></a>2.2字体</h3><p>需要加粗的字体前后需要添加**<br><code>*需要加粗的字体* </code><br><strong>需要加粗的字体</strong></p>
+<p>需要使用斜体的字体前后需要添加*<br><code>*需要使用斜体的字体</code><br><em>需要使用斜体的字体</em></p>
+<p>需要使用删除线的字体前后需要添加~<br><code>~需要使用删除线的字体~</code><br><del>需要使用删除线的字体</del></p>
+<p>PS：<br>Markdown中的许多符号都有特殊的含义 要正确地输入这些字符就需要使用转义字符<br>在需要输入的字符前添加\</p>
+<h3 id="2-3分割线"><a href="#2-3分割线" class="headerlink" title="2.3分割线"></a>2.3分割线</h3><p>在需要添加分割线处加入***或---</p>
+<hr>
+<h3 id="2-4代码块"><a href="#2-4代码块" class="headerlink" title="2.4代码块"></a>2.4代码块</h3><p>单行代码前后需要用`包起来<br><code>hexo s -p 5555</code></p>
+<p>多行代码前后需要用添加``` 且```应该独占1行<br>在```后加入空格再加入语言名称能够使代码高亮</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo03Random</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Random r = <span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">int</span> num1 = <span class="keyword">new</span> Scanner(System.in).nextInt();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> num2 = r.nextInt(num1)+<span class="number">1</span>;</span><br><span class="line">            System.out.println(num2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5引用"><a href="#2-5引用" class="headerlink" title="2.5引用"></a>2.5引用</h3><p>在需要引用的文本前加&gt; &gt;的数量代表引用的级别<br><code>&gt;需要引用的文本</code></p>
+<blockquote>
+<p>需要引用的文本</p>
+</blockquote>
+<h3 id="2-6图片"><a href="#2-6图片" class="headerlink" title="2.6图片"></a>2.6图片</h3><p>Markdown中插入图片需要按照特定的格式<br>![alt text 属性文本](图片地址”optional title 可选标题”)</p>
+<p>alt text 属性文本<br>为描述图片的关键词 当图片无法显示将会显示alt属性文本</p>
+<p>optional title 可选标题<br>当鼠标悬停在图片上时将会显示optional title</p>
+<p><code>![Pic1.jpg](https://i.loli.net/2021/07/19/AEqZtxHhXDLlKVR.jpg)</code></p>
+<p><img src="https://i.loli.net/2021/07/19/AEqZtxHhXDLlKVR.jpg" alt="Pic1.jpg" title="作品ID:67125950 水面向こう 画师ID:986537 幻想絵風"></p>
+<p>Markdown中插入的图片的地址可以是本地路径或服务器的网络地址<br>博客中的图片往往会存放在一种专门存储图片的服务器中 即图床<br>有关于图床推荐与使用方法：</p>
+<h3 id="2-7链接"><a href="#2-7链接" class="headerlink" title="2.7链接"></a>2.7链接</h3><p>Markdown中插入链接的格式与插入图片的格式十分相似<br>[alt text 属性文本](链接地址 “optional title 可选标题”)</p>
+<p>其中链接分为行内式链接 参考式链接 自动链接</p>
+<p>行内式链接<br><code>[Biliibili](https://www.bilibili.com/)</code><br><a href="https://www.bilibili.com/">Biliibili</a></p>
+<p>参考式链接</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Bilibili][url]</span><br><span class="line"></span><br><span class="line">[url]: https://www.bilibili.com/</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.bilibili.com/">Bilibili</a></p>
+<p>自动链接<br><code>&lt;https://www.bilibili.com/&gt;</code><br><a href="https://www.bilibili.com/">https://www.bilibili.com/</a></p>
+<h3 id="2-8列表"><a href="#2-8列表" class="headerlink" title="2.8列表"></a>2.8列表</h3><p>Markdown中存在有序列表与无序列表2种列表</p>
+<p>有序列表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br></pre></td></tr></table></figure>
+<ol>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ol>
+<p>无序列表</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">- 列表内容</span><br><span class="line">- 列表内容</span><br></pre></td></tr></table></figure>
+<ul>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ul>
+<h3 id="2-9-表格"><a href="#2-9-表格" class="headerlink" title="2.9 表格"></a>2.9 表格</h3><p>Markdown中插入图片需要按照特定的格式<br>Markdown中插入的表格的内容可以控制其左右对齐<br>右对齐 :-<br>居中 :-:<br>右对齐 -:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">表格内容|表格内容|表格内容|</span><br><span class="line">:-:|:-:|:-:|</span><br><span class="line">表格内容|表格内容|表格内容|</span><br><span class="line">表格内容|表格内容|表格内容|</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">表格内容</th>
+<th align="center">表格内容</th>
+<th align="center">表格内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">表格内容</td>
+<td align="center">表格内容</td>
+<td align="center">表格内容</td>
+</tr>
+<tr>
+<td align="center">表格内容</td>
+<td align="center">表格内容</td>
+<td align="center">表格内容</td>
+</tr>
+</tbody></table>
+<h2 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h2><p>Markdown作为一种轻量级的标记语言 注重其简单易用的特性<br>Markdown无法实现的功能可以通过HTML5进行弥补<br>网络上Markdown的教程非常多 本文介绍的是较为常用的基本使用方法<br>此次为本人第1次写教程类型的文章 如有阐述不清的地方还请多谅解<br>感谢阅读 ๑╹◡╹)ﾉ”</p>
 ]]></content>
       <categories>
         <category>前端</category>
