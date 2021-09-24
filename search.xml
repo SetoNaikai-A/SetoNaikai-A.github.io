@@ -106,8 +106,10 @@
   <entry>
     <title>搭建Hexo博客</title>
     <url>/2021/07/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>此文为关于搭建Hexo博客的教程汇总</p>
-<span id="more"></span>]]></content>
+    <content><![CDATA[<h2 id="1-Hexo是什么"><a href="#1-Hexo是什么" class="headerlink" title="1.Hexo是什么"></a>1.Hexo是什么</h2><p>Hexo是一个快速、简洁、高效的博客框架 </p>
+<span id="more"></span>
+<p>这个是Hexo官网给出的定义<br>所谓博客即网络日志</p>
+]]></content>
       <categories>
         <category>前端</category>
       </categories>
