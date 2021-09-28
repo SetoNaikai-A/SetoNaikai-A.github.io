@@ -110,13 +110,13 @@
 <span id="more"></span>
 
 <p>博客 即网络日志 是由个人管理，不定期更新文章的个人网站<br>框架 则是封装了能够实现基础功能代码的代码库</p>
-<p>关于Hexo博客<br>Hexo 是一种静态博客框架，构建的博客实际上都是静态网页，不同于使用WordPress搭建的动态博客，其不需要依托于服务器<br>但是需要依托于一些支持静态博客框架的服务，例如 Github Pages</p>
+<p><strong>关于Hexo博客</strong><br>Hexo 是一种静态博客框架，构建的博客实际上都是静态网页，不同于使用WordPress搭建的动态博客，其不需要依托于服务器<br>但是需要依托于一些支持静态博客框架的服务，例如 Github Pages</p>
 <p>除了Hexo博客框架之外，还有其他的博客框架，想要了解详细的内容可以参考这篇文章<br><a href="https://blog.csdn.net/weixin_42365530/article/details/107840934">七大开源blog框架介绍</a></p>
 <h2 id="2-Hexo框架下载与主题选择"><a href="#2-Hexo框架下载与主题选择" class="headerlink" title="2.Hexo框架下载与主题选择"></a>2.Hexo框架下载与主题选择</h2><p>首先在搭建Hexo博客之前可以在官网下载相应的文件 其次可以在官网的Themes中选择想要使用主题<br><a href="https://hexo.io/">Hexo官网</a></p>
 <p>Next主题为使用人数较多的Hexo主题 关于主题优化改造的教程相应也会较多<br>对于初次接触Hexo博客的站主来说 Next自然是比较好的选择<br><a href="http://theme-next.iissnan.com/">Next官网</a></p>
 <h2 id="3-Hexo博客搭建教程"><a href="#3-Hexo博客搭建教程" class="headerlink" title="3.Hexo博客搭建教程"></a>3.Hexo博客搭建教程</h2><p>做好这些准备工作之后按照视频教程的步骤一步步来就好了<br><a href="https://www.bilibili.com/video/BV1cW411A7Jx?from=search&seid=5567084142555335097&spm_id_from=333.337.0.0">手把手教你搭建属于自己的hexo+github博客</a></p>
 <p>注意:因为在2020年10月1日起，GitHub默认主分支从 master 更名为 main<br>所以该视频中的提交方式会默认创建一个master分支，为保持一致性，可将本地git init的时候默认分支修改为main<br>执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version  查看版本</span><br><span class="line">git config --global init.defaultBranch main       git分支在2.28.0上，重新设置默认分支为main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version  查看版本</span><br><span class="line">git config --global init.defaultBranch main       git分支在2.28.0上，重新设置默认分支为main</span><br></pre></td></tr></table></figure>
 
 <p>最后修改deploy那里的branch：将master改为main</p>
 <p>此方法用于解决本地搭好了主题，在GitHub上却没有变化的问题</p>
