@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/07/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start-Hello-Hexo"><a href="#Quick-Start-Hello-Hexo" class="headerlink" title="Quick Start Hello Hexo"></a>Quick Start Hello Hexo</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>搭建Hexo博客</title>
+    <url>/2021/07/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="1-Hexo是什么"><a href="#1-Hexo是什么" class="headerlink" title="1.Hexo是什么"></a>1.Hexo是什么</h2><p>Hexo 是一款快速、简洁、高效的博客框架</p>
+<span id="more"></span>
+
+<p>博客 即网络日志 是由个人管理，不定期更新文章的个人网站<br>框架 则是封装了能够实现基础功能代码的代码库</p>
+<p><strong>关于Hexo博客</strong><br>Hexo 是一种静态博客框架，构建的博客实际上都是静态网页，不同于使用WordPress搭建的动态博客，其不需要依托于服务器<br>但是需要依托于一些支持静态博客框架的服务，例如 Github Pages</p>
+<p>除了Hexo博客框架之外，还有其他的博客框架，想要了解详细的内容可以参考这篇文章<br><a href="https://blog.csdn.net/weixin_42365530/article/details/107840934">七大开源blog框架介绍</a></p>
+<h2 id="2-Hexo框架下载与主题选择"><a href="#2-Hexo框架下载与主题选择" class="headerlink" title="2.Hexo框架下载与主题选择"></a>2.Hexo框架下载与主题选择</h2><p>首先在搭建Hexo博客之前可以在官网下载相应的文件 其次可以在官网的Themes中选择想要使用主题<br><a href="https://hexo.io/">Hexo官网</a></p>
+<p>Next主题为使用人数较多的Hexo主题 关于主题优化改造的教程相应也会较多<br>对于初次接触Hexo博客的站主来说 Next自然是比较好的选择<br><a href="http://theme-next.iissnan.com/">Next官网</a></p>
+<h2 id="3-Hexo博客搭建教程"><a href="#3-Hexo博客搭建教程" class="headerlink" title="3.Hexo博客搭建教程"></a>3.Hexo博客搭建教程</h2><p>做好这些准备工作之后按照视频教程的步骤一步步来就好了<br><a href="https://www.bilibili.com/video/BV1cW411A7Jx?from=search&seid=5567084142555335097&spm_id_from=333.337.0.0">手把手教你搭建属于自己的hexo+github博客</a></p>
+<p>注意:因为在2020年10月1日起，GitHub默认主分支从 master 更名为 main<br>所以该视频中的提交方式会默认创建一个master分支，为保持一致性，可将本地git init的时候默认分支修改为main<br>执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version  查看版本</span><br><span class="line">git config --global init.defaultBranch main       git分支在2.28.0上，重新设置默认分支为main</span><br></pre></td></tr></table></figure>
+
+<p>最后修改deploy那里的branch：将master改为main</p>
+<p>此方法用于解决本地搭好了主题，在GitHub上却没有变化的问题</p>
+<h2 id="4-Hexo博客Next主题优化改造"><a href="#4-Hexo博客Next主题优化改造" class="headerlink" title="4.Hexo博客Next主题优化改造"></a>4.Hexo博客Next主题优化改造</h2><p>Next主题的优化以及添加一些例如评论区的功能可以根据以下视频进行操作<br><a href="https://www.bilibili.com/video/BV16W411t7mq?from=search&seid=9305684963897241411&spm_id_from=333.337.0.0">使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造</a></p>
+<p>注意:视频中的 language: zh-Hans 需要更改为 language: zh-CN</p>
+<p>Next主题如何添加背景图片<br><a href="https://blog.csdn.net/weixin_46106283/article/details/109880961">Next主题添加背景图片</a></p>
+<h2 id="5-Hexo博客添加自己的域名"><a href="#5-Hexo博客添加自己的域名" class="headerlink" title="5.Hexo博客添加自己的域名"></a>5.Hexo博客添加自己的域名</h2><p>如果还没有购买过服务器或域名可以根据以下视频进行操作<br><a href="https://www.bilibili.com/video/BV147411M7C7?from=search&seid=9638524931376618382&spm_id_from=333.337.0.0">详细搭建过程演示 | Hugo+GitHub Pages,无需域名+云服务器</a></p>
+<p>购买到域名并且审核通过后如何让添加域名<br><a href="https://blog.csdn.net/miss_bear/article/details/106164293">hexo博客设置域名</a></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>关于Hexo博客的搭建与使用本人接触的时间也不长 如有阐述不清的地方还请多谅解<br>此文后续还会不断更新<br>感谢阅读 ๑╹◡╹)ﾉ”</p>
+]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown的基本使用</title>
     <url>/2021/07/16/Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="1-Markdown是什么"><a href="#1-Markdown是什么" class="headerlink" title="1.Markdown是什么"></a>1.Markdown是什么</h2><p>Markdown是一种轻量级的标记语言，通过Markdown语法编辑文本，能够使文本呈现清晰的结构</p>
@@ -75,57 +126,6 @@
 </tr>
 </tbody></table>
 <h2 id="3-其他"><a href="#3-其他" class="headerlink" title="3.其他"></a>3.其他</h2><p>Markdown作为一种轻量级的标记语言 注重其简单易用的特性<br>Markdown无法实现的功能可以通过HTML5进行弥补<br>网络上Markdown的教程非常多 本文介绍的是较为常用的基本使用方法<br>此次为本人第1次写教程类型的文章 如有阐述不清的地方还请多谅解<br>感谢阅读 ๑╹◡╹)ﾉ”</p>
-]]></content>
-      <categories>
-        <category>前端</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/07/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start-Hello-Hexo"><a href="#Quick-Start-Hello-Hexo" class="headerlink" title="Quick Start Hello Hexo"></a>Quick Start Hello Hexo</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>搭建Hexo博客</title>
-    <url>/2021/07/16/%E6%90%AD%E5%BB%BAHexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h2 id="1-Hexo是什么"><a href="#1-Hexo是什么" class="headerlink" title="1.Hexo是什么"></a>1.Hexo是什么</h2><p>Hexo 是一款快速、简洁、高效的博客框架</p>
-<span id="more"></span>
-
-<p>博客 即网络日志 是由个人管理，不定期更新文章的个人网站<br>框架 则是封装了能够实现基础功能代码的代码库</p>
-<p><strong>关于Hexo博客</strong><br>Hexo 是一种静态博客框架，构建的博客实际上都是静态网页，不同于使用WordPress搭建的动态博客，其不需要依托于服务器<br>但是需要依托于一些支持静态博客框架的服务，例如 Github Pages</p>
-<p>除了Hexo博客框架之外，还有其他的博客框架，想要了解详细的内容可以参考这篇文章<br><a href="https://blog.csdn.net/weixin_42365530/article/details/107840934">七大开源blog框架介绍</a></p>
-<h2 id="2-Hexo框架下载与主题选择"><a href="#2-Hexo框架下载与主题选择" class="headerlink" title="2.Hexo框架下载与主题选择"></a>2.Hexo框架下载与主题选择</h2><p>首先在搭建Hexo博客之前可以在官网下载相应的文件 其次可以在官网的Themes中选择想要使用主题<br><a href="https://hexo.io/">Hexo官网</a></p>
-<p>Next主题为使用人数较多的Hexo主题 关于主题优化改造的教程相应也会较多<br>对于初次接触Hexo博客的站主来说 Next自然是比较好的选择<br><a href="http://theme-next.iissnan.com/">Next官网</a></p>
-<h2 id="3-Hexo博客搭建教程"><a href="#3-Hexo博客搭建教程" class="headerlink" title="3.Hexo博客搭建教程"></a>3.Hexo博客搭建教程</h2><p>做好这些准备工作之后按照视频教程的步骤一步步来就好了<br><a href="https://www.bilibili.com/video/BV1cW411A7Jx?from=search&seid=5567084142555335097&spm_id_from=333.337.0.0">手把手教你搭建属于自己的hexo+github博客</a></p>
-<p>注意:因为在2020年10月1日起，GitHub默认主分支从 master 更名为 main<br>所以该视频中的提交方式会默认创建一个master分支，为保持一致性，可将本地git init的时候默认分支修改为main<br>执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git --version  查看版本</span><br><span class="line">git config --global init.defaultBranch main       git分支在2.28.0上，重新设置默认分支为main</span><br></pre></td></tr></table></figure>
-
-<p>最后修改deploy那里的branch：将master改为main</p>
-<p>此方法用于解决本地搭好了主题，在GitHub上却没有变化的问题</p>
-<h2 id="4-Hexo博客Next主题优化改造"><a href="#4-Hexo博客Next主题优化改造" class="headerlink" title="4.Hexo博客Next主题优化改造"></a>4.Hexo博客Next主题优化改造</h2><p>Next主题的优化以及添加一些例如评论区的功能可以根据以下视频进行操作<br><a href="https://www.bilibili.com/video/BV16W411t7mq?from=search&seid=9305684963897241411&spm_id_from=333.337.0.0">使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造</a></p>
-<p>注意:视频中的 language: zh-Hans 需要更改为 language: zh-CN</p>
-<p>Next主题如何添加背景图片<br><a href="https://blog.csdn.net/weixin_46106283/article/details/109880961">Next主题添加背景图片</a></p>
-<h2 id="5-Hexo博客添加自己的域名"><a href="#5-Hexo博客添加自己的域名" class="headerlink" title="5.Hexo博客添加自己的域名"></a>5.Hexo博客添加自己的域名</h2><p>如果还没有购买过服务器或域名可以根据以下视频进行操作<br><a href="https://www.bilibili.com/video/BV147411M7C7?from=search&seid=9638524931376618382&spm_id_from=333.337.0.0">详细搭建过程演示 | Hugo+GitHub Pages,无需域名+云服务器</a></p>
-<p>购买到域名并且审核通过后如何让添加域名<br><a href="https://blog.csdn.net/miss_bear/article/details/106164293">hexo博客设置域名</a></p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>关于Hexo博客的搭建与使用本人接触的时间也不长 如有阐述不清的地方还请多谅解<br>此文后续还会不断更新<br>感谢阅读 ๑╹◡╹)ﾉ”</p>
 ]]></content>
       <categories>
         <category>前端</category>
