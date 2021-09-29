@@ -136,7 +136,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Java Day9/29 Collection GenericClass</title>
+    <title>Java 中的 集合Collection 与 泛型GenericClass</title>
     <url>/2021/09/29/Java-Day9-29-Collection-GenericClass/</url>
     <content><![CDATA[<h3 id="1-集合是什么"><a href="#1-集合是什么" class="headerlink" title="1.集合是什么"></a>1.集合是什么</h3><p>集合：Java中提供的一种容器 可以用来存放多个数据</p>
 <span id="more"></span>
@@ -245,20 +245,28 @@
 
 <p><strong>通配符高级使用—-受限泛型</strong></p>
 <p>之前设置泛型的时候，实际上是可以任意设置的，只要是类就可以设置。但是在JAVA的泛型中可以指定一个泛型的<strong>上限</strong>和<strong>下限</strong>。</p>
-<p><strong>泛型的上限</strong>：</p>
-<ul>
-<li><strong>格式</strong>： <code>类型名称 &lt;? extends 类 &gt; 对象名称</code></li>
-<li><strong>意义</strong>： <code>只能接收该类型及其子类</code></li>
-</ul>
-<p><strong>泛型的下限</strong>：</p>
-<ul>
-<li><strong>格式</strong>： <code>类型名称 &lt;? super 类 &gt; 对象名称</code></li>
-<li><strong>意义</strong>： <code>只能接收该类型及其父类型</code></li>
-</ul>
-<p>感谢阅读 ๑╹◡╹)ﾉ”</p>
+<p><strong>泛型的上限</strong></p>
+<p><strong>格式</strong></p>
+<blockquote>
+<p>类型名称 &lt;? extends 类 &gt; 对象名称</p>
+</blockquote>
+<p><strong>意义</strong></p>
+<blockquote>
+<p>只能接收该类型及其子类</p>
+</blockquote>
+<p><strong>泛型的下限</strong></p>
+<p><strong>格式</strong></p>
+<blockquote>
+<p>类型名称 &lt;? super 类 &gt; 对象名称</p>
+</blockquote>
+<p><strong>意义</strong></p>
+<blockquote>
+<p>只能接收该类型及其父类型</p>
+</blockquote>
+<p>关于Java中的Collection与GenericClass<br>目前总结的就以上这么多<br>感谢阅读 ๑╹◡╹)ﾉ”</p>
 ]]></content>
       <categories>
-        <category>编程语言</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>笔记</tag>
