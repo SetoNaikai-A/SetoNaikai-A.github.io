@@ -136,7 +136,7 @@
       </tags>
   </entry>
   <entry>
-    <title>Java 中的 集合Collection 与 泛型GenericClass</title>
+    <title>集合Collection 与 泛型GenericClass</title>
     <url>/2021/09/29/Java-Day9-29-Collection-GenericClass/</url>
     <content><![CDATA[<h3 id="1-集合是什么"><a href="#1-集合是什么" class="headerlink" title="1.集合是什么"></a>1.集合是什么</h3><p>集合：Java中提供的一种容器 可以用来存放多个数据</p>
 <span id="more"></span>
